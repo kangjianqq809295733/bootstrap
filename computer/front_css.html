@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS语言介绍</title>
+<link rel="stylesheet" href="../css/vendor/bootstrap/css/bootstrap.min.css">
+<script src="../js/vendor/jquery.min.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Loading Bootstrap -->
+<link href="../css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Loading Flat UI -->
+<link href="../css/flat-ui.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="../img/favicon.ico">
+<style>
+/* Custom Styles */
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" onload="prettyPrint()">
+<div class="container">
+   <div class="jumbotron">
+        <h1>CSS语言介绍</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active"><a href="#section-1">语言简介</a></li>
+                <li><a href="#section-2">发展历史</a></li>
+                <li><a href="#section-3">语言特点</a></li>
+                <li><a href="#section-4">代码样例</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h2 id="section-1">语言简介</h2>
+            <div class="row"><br>
+                <div class="col-md-12">
+                    <table class="table table-hover">
+                      <tbody>
+                        <tr>
+                          <td>中文名</td>
+                          <td>层叠样式表</td>
+                        </tr>
+                        <tr>
+                          <td>外文名</td>
+                          <td>Cascading Style Sheets</td>
+                        </tr>
+                        <tr>
+                          <td>外语缩写</td>
+                          <td>CSS（也作文件扩展名）</td>
+                        </tr>
+                        <tr>
+                          <td>其他称呼</td>
+                          <td>级联样式表</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言。<br/>
+      			&nbsp;&nbsp;&nbsp;&nbsp;CSS目前最新版本为CSS5，是能够真正做到网页表现与内容分离的一种样式设计语言。相对于传统HTML的表现而言，CSS能够对网页中的对象的位置排版进行像素级的精确控制，支持几乎所有的字体字号样式，拥有对网页对象和模型样式编辑的能力，并能够进行初步交互设计，是目前基于文本展示最优秀的表现设计语言。CSS能够根据不同使用者的理解能力，简化或者优化写法，针对各类人群，有较强的易读性。<br/>
+        	</p> 
+            <h2 id="section-2">发展历史</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;CSS1<br/>
+			   &nbsp;&nbsp;&nbsp;&nbsp;作为一项W3C推荐，CSS1发布于 1996年12月17 日。1999 年1月11日，此推荐被重新修订。<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;CSS2<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;作为一项 W3C 推荐，CSS2发布于 1999年1月11日。CSS2添加了对媒介（打印机和听觉设备）和可下载字体的支持。<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;CSS3<br/>
+               &nbsp;&nbsp;&nbsp;&nbsp;CSS3 计划将 CSS 划分为更小的模块。<br/>
+            <hr>
+            <h2 id="section-3">语言特点</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一、使页面载入得更快<br/>
+            　　&nbsp;&nbsp;&nbsp;&nbsp;由于将大部分页面代码写在了CSS当中，使得页面体积容量变得更小。相对于表格嵌套的方式，DIV+CSS将页面独立成更多的区域，在打开页面的时候，逐层加载。而不像表格嵌套那样将整个页面圈在一个大表格里，使得加载速度很慢。<br/>
+            　　二、降低流量费用<br/>
+            　　&nbsp;&nbsp;&nbsp;&nbsp;页面体积变小，浏览速度变快，这就使得对于某些控制主机流量的网站来说是最大的优势了。<br/>
+            　　三、修改设计时更有效率<br/>
+            　　&nbsp;&nbsp;&nbsp;&nbsp;由于使用了DIV+CSS制作方法，在修改页面的时候更加容易省时。根据区域内容标记，到CSS里找到相应的ID，使得修改页面的时候更加方便，也不会破坏页面其他部分的布局样式。<br/>
+            　  &nbsp;&nbsp;&nbsp;四、保持视觉的一致性<br/>
+            　　&nbsp;&nbsp;&nbsp;&nbsp;DIV+CSS最重要的优势之一：保持视觉的一致性；以往表格嵌套的制作方法，会使得页面与页面，或者区域与区域之间的显示效果会有偏差。而使用DIV+CSS的制作方法，将所有页面，或所有区域统一用CSS文件控制，就避免了不同区域或不同页面体现出的效果偏差。<br/>
+            　　&nbsp;五、更好地被搜索引擎收录<br/>
+            　　&nbsp;&nbsp;&nbsp;&nbsp;由于将大部分的HTML代码和内容样式写入了CSS文件中，这就使得网页中正文部分更为突出明显，便于被搜索引擎采集收录。<br/>
+            　　&nbsp;六、对浏览者和浏览器更具亲和力<br/>
+            　　&nbsp;&nbsp;&nbsp;&nbsp;我们都知道网站做出来是给浏览者使用的，对浏览者和浏览器更具亲和力，DIV+CSS在这方面更具优势。由于CSS富含丰富的样式，使页面更加灵活性，它可以根据不同的浏览器，而达到显示效果的统一和不变形。<br/>
+            </p>
+            <hr>
+            <h2 id="section-4">代码样例</h2>
+            <pre class="prettyprint linenums">
+            	&lt;head&gt;
+                &lt;style type=&quot;text/css&quot;&gt; 
+                body {
+			background-color:red;
+		} 
+                p {
+			margin-left:20px;
+		}
+		&lt;/style&gt;
+                &lt;/head&gt;
+            </pre>
+            <hr>
+            
+        </div>
+    </div>
+</div>
+ <!-- /.container -->
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+</body>
+</html>

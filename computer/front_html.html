@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML语言介绍</title>
+<link rel="stylesheet" href="../css/vendor/bootstrap/css/bootstrap.min.css">
+<script src="../js/vendor/jquery.min.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Loading Bootstrap -->
+<link href="../css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Loading Flat UI -->
+<link href="../css/flat-ui.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="../img/favicon.ico">
+<style>
+/* Custom Styles */
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" onload="prettyPrint()">
+<div class="container">
+   <div class="jumbotron">
+        <h1>HTML语言介绍</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active"><a href="#section-1">语言简介</a></li>
+                <li><a href="#section-2">发展历史</a></li>
+                <li><a href="#section-3">语言特点</a></li>
+                <li><a href="#section-4">代码样例</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h2 id="section-1">语言简介</h2>
+            <div class="row"><br>
+                <div class="col-md-12">
+                    <table class="table table-hover">
+                      <tbody>
+                        <tr>
+                          <td>中文名</td>
+                          <td>超级文本标记语言</td>
+                        </tr>
+                        <tr>
+                          <td>外文名</td>
+                          <td>HyperText Markup Language</td>
+                        </tr>
+                        <tr>
+                          <td>类型</td>
+                          <td>标记语言</td>
+                        </tr>
+                        <tr>
+                          <td>阅读方式</td>
+                          <td>网页浏览器</td>
+                        </tr>
+                        <tr>
+                          <td>中文缩写</td>
+                          <td>超文本标记语言</td>
+                        </tr>
+                        <tr>
+                          <td>外语缩写</td>
+                          <td>HTML或HTM（都作文件扩展名）</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;超文本标记语言，标准通用标记语言下的一个应用。
+   			“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。
+   		超文本标记语言的结构包括“头”部分（英语：Head）、和“主体”部分（英语：Body）， 其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。
+        	</p> 
+            <h2 id="section-2">发展历史</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;超文本标记语言（第一版）——在1993年6月作为互联网工程工作小组（IETF）工作草案发布（并非标准）：<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML 2.0——1995年11月作为RFC 1866发布，在RFC 2854于2000年6月发布之后被宣布已经过时<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML 3.2——1997年1月14日，W3C推荐标准<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML 4.0——1997年12月18日，W3C推荐标准<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML 4.01（微小改进）——1999年12月24日，W3C推荐标准<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML 5——2014年10月28日，W3C推荐标准<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;ISO/IEC 15445:2000（“ISO HTML”）——2000年5月15日发布，基于严格的HTML 4.01语法，是国际标准化组织和国际电工委员会的标准。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;Wijmo是基于HTML5、jQuery、CSS3和SVG的一个控件包，能够满足构建当今Web系统的需求。基于Wijmo，您的系统运行将更加快速和流畅，外观也会更加引人入胜。Wijmo中所有新的控件都是在符合最新的UI设计潮流的基础上，对新的以及改良后的主题进行封装。优美的、专业的控件外观会让您的应用程序引人注目。比如 ComponentOne Studio for ASP .NET Wijmo 控件包内置的6个主题，同时可以使用jQuery UI项目提供的 30 多个主题，甚至可以使用 ThemeRoller 创建属于您自己的系统主题。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML没有1.0版本是因为当时有很多不同的版本。有些人认为蒂姆·伯纳斯-李的版本应该算初版，这个版本没有IMG元素。当时被称为HTML+的后续版的开发工作于1993年开始，最初是被设计成为“HTML的一个超集”。第一个正式规范为了和当时的各种HTML标准区分开来，使用了2.0作为其版本号。HTML+的发展继续下去，但是它从未成为标准。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML3.0规范是由当时刚成立的W3C于1995年3月提出，提供了很多新的特性，例如表格、文字绕排和复杂数学元素的显示。虽然它是被设计用来兼容2.0版本的，但是实现这个标准的工作在当时过于复杂，在草案于1995年9月过期时，标准开发也因为缺乏浏览器支持而中止了。3.1版从未被正式提出，而下一个被提出的版本是开发代号为Wilbur的HTML 3.2，去掉了大部分3.0中的新特性，但是加入了很多特定浏览器，例如Netscape和Mosaic的元素和属性。HTML对数学公式的支持最后成为另外一个标准MathML。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML 4.0同样也加入了很多特定浏览器的元素和属性，但是同时也开始“清理”这个标准，把一些元素和属性标记为过时，建议不再使用它们。HTML的未来和CSS结合会更好。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML 5草案的前身名为Web Applications 1.0。于2004年被WHATWG提出，于2007年被W3C接纳，并成立了新的HTML工作团队。在2008年1月22日，第一份正式草案发布。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;XHTML1.0——发布于2000年1月26日，是W3C推荐标准，后来经过修订于2002年8月1日重新发布。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;XHTML 1.1，于2001年5月31日发布，W3C推荐标准。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;XHTML 2.0，W3C工作草案。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;XHTML 5，从XHTML 1.x的更新版，基于HTML 5草案。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;HTML4.01 是常见的版本。<br/>
+            <hr>
+            <h2 id="section-3">语言特点</h2>
+            <p>
+            	&nbsp;&nbsp;&nbsp;&nbsp;超级文本标记语言文档制作不是很复杂，但功能强大，支持不同数据格式的文件镶入，这也是万维网（WWW）盛行的原因之一，其主要特点如下：<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;1.简易性：超级文本标记语言版本升级采用超集方式，从而更加灵活方便。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;2.可扩展性：超级文本标记语言的广泛应用带来了加强功能，增加标识符等要求，超级文本标记语言采取子类元素的方式，为系统扩展带来保证。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;3.平台无关性：虽然个人计算机大行其道，但使用MAC等其他机器的大有人在，超级文本标记语言可以使用在广泛的平台上，这也是万维网（WWW）盛行的另一个原因。<br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;4.通用性：另外，HTML是网络的通用语言,一种简单、通用的全置标记语言。它允许网页制作人建立文本与图片相结合的复杂页面，这些页面可以被网上任何其他人浏览到，无论使用的是什么类型的电脑或浏览器。<br/>
+            </p>
+            <hr>
+            <h2 id="section-4">代码样例</h2>
+            <pre class="prettyprint linenums">
+            	&lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+                &lt;title&gt;网页中使用google-code-prettify来让代码高亮显示的方法-HTMer&lt;/title&gt;
+                &lt;link href=&quot;prettify.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+                &lt;script src=&quot;prettify.js&quot;&gt;&lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body onload=&quot;prettyPrint()&quot;&gt;
+                &lt;pre class=&quot;prettyprint&quot;&gt;这里贴出你所要显示的代码&lt;/pre&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <hr>
+            
+        </div>
+    </div>
+</div>
+ <!-- /.container -->
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+</body>
+</html>

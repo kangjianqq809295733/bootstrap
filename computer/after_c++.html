@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>C++语言介绍</title>
+<link rel="stylesheet" href="../css/vendor/bootstrap/css/bootstrap.min.css">
+<script src="../js/vendor/jquery.min.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<link href="../css/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/prettify.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Loading Bootstrap -->
+<link href="../css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Loading Flat UI -->
+<link href="../css/flat-ui.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<link rel="shortcut icon" href="../img/favicon.ico">
+<style>
+/* Custom Styles */
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" onload="prettyPrint()">
+<div class="container">
+   <div class="jumbotron">
+        <h1>C++语言介绍</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+                <li class="active"><a href="#section-1">语言简介</a></li>
+                <li><a href="#section-2">发展历史</a></li>
+                <li><a href="#section-3">语言特点</a></li>
+                <li><a href="#section-4">代码样例</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h2 id="section-1">语言简介</h2>
+            <div class="row"><br>
+                <div class="col-md-12">
+                    <table class="table table-hover">
+                      <tbody>
+                        <tr>
+                          <td>中文名</td>
+                          <td>C++语言</td>
+                        </tr>
+                        <tr>
+                          <td>外文名</td>
+                          <td>The C++ Programming Language/c plus plus</td>
+                        </tr>
+                        <tr>
+                          <td>外语缩写</td>
+                          <td>C++</td>
+                        </tr>
+                        <tr>
+                          <td>创始人</td>
+                          <td>Bjarne Stroustrup</td>
+                        </tr>
+                        <tr>
+                          <td>创始公司</td>
+                          <td>贝尔实验室</td>
+                        </tr>
+                        <tr>
+                          <td>基本内容</td>
+                          <td>类、封装、重载、继承、模版</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            <p>C++是在C语言的基础上开发的一种面向对象编程语言，属于编译型语言，应用广泛；C++支持多种编程范式，面向对象编程、泛型编程和过程化编程。最新正式标准C++于2014年8月18日公布。其编程领域众广，常用于系统开发，引擎开发等应用领 域，支持类、封装、继承、多态等特性!<br/>
+        	</p> 
+            <h2 id="section-2">发展历史</h2>
+            <p>
+            1983年，贝尔实验室的Bjarne Stroustrup在C语言基础上推出了C++。 C++进一步扩充和完善了C语言，是一种面向对象的程序设计语言。
+			在“C with Class”阶段，研制者在C语言的基础上加进去的特征主要有：类及派生类、共有和私有成员的区分、类的构造函数和析构函数、友元、内联函数、赋值运算符的重载等。<br/>
+			1985年公布的C++语言1.0版的内容中又添加了一些重要特征：虚函数的概念、函数和运算符的重载、引用、常量（constant）等。<br/>
+			1989年推出的2.0版形成了更加完善的支持面向对象程序设计的C++语言，新增加的内容包括：类的保护成员、多重继承、对象的初始化与赋值的递归机制、抽象类、静态成员函数、const成员函数等。<br/>
+			1993年的C++语言3.0版本是C++语言的进一步完善，其中最重要的新特征是模板（template）,此外解决了多重继承产生的二义性问题和相应的构造函数与析构函数的处理等。<br/>
+			1998年C++标准（ISO/IEC14882 Standard for the C++ Programming Language）得到了国际标准化组织（ISO）和美国标准化协会（ANSI）的批准，标准C++语言及其标准库更体现了C++语言设计的初衷。名字空间的概念、标准模板库（STL）中增加的标准容器类、通用算法类和字符串类型等使得C++语言更为实用。此后C++是具有国际标准的编程语言，该标准通常简称ANSI C++或ISO C++ 98标准，以后每5年视实际需要更新一次标准。
+后来又在2003年通过了C++标准第二版（ISO/IEC 14882:2003）：这个新版本是一次技术性修订，对第一版进行了整理——修订错误、减少多义性等，但没有改变语言特性。这个版本常被称为C++03。<br/>
+			此后，新的标准草案叫做C++ 0x。对于C++ 0x标准草案的最终国际投票已于2011年8月10日结束，并且所有国家都投出了赞成票，C++0x已经毫无异议地成为正式国际标准。先前被临时命名为C++0x的新标准正式定名为ISO/IEC 14882:2011，简称ISO C++ 11标准。C++ 11标准将取代现行的C++标准C++98和C++03。国际标准化组织于2011年9月1日出版发布《ISO/IEC 14882:2011》，名称是：Information technology -- Programming languages -- C++ Edition: 3。<br/>
+            </p>
+            <hr>
+            <h2 id="section-3">语言特点</h2>
+            <p>C++设计成静态类型、和C同样高效且可移植的多用途程序设计语言。<br/>
+C++设计直接的和广泛的支持多种程序设计风格（程序化程序设计、资料抽象化、面向对象程序设计、泛型程序设计）。<br/>
+C++设计无需复杂的程序设计环境<br/>
+C++语言灵活，运算符的数据结构丰富、具有结构化控制语句、程序执行效率高，而且同时具有高级语言与汇编语言的优点，与其它语言相比 ，可以直接访问物理地址，与汇编语言相比又具有良好的可读性和可移植性。<br/>
+总得来说，C++语言的主要特点表现在两个方面，一是尽量兼容C,二是支持面向对象的方法。它操持了C的简洁、高效的接近汇编语言等特点，对C的类型系统进行了改革的扩充，因此C++比C更安全，C++的编译系统能检查出更多的类型错误。另外，由于C语言的广泛使用，因而极大的促进了C++的普及和推广。<br/>
+C++语言最有意义的方面是支持面向对象的特征。虽然与C的兼容使得C++具有双重特点，但他在概念上完全与C不同，更具面向对象的特征。<br/>
+出于保证语言的简洁和运行高效等方面的考虑，C++的很多特性都是以库（如STL）或其他的形式提供的，而没有直接添加到语言本身里。关于此类话题，Bjarne Stroustrup的《C++语言的设计和演化》（1994）里做了详尽的陈述。<br/>
+C++引入了面向对象的概念，使得开发人机交互类型的应用程序更为简单、快捷。很多优秀的程序框架包括Boost、Qt、MFC、OWL、wxWidgets、WTL就是使用的C++。<br/>
+            </p>
+            <hr>
+            <h2 id="section-4">代码样例</h2>
+            <pre class="prettyprint linenums">
+            	  class Student{//声明类类型
+                　public://先声明公用部分
+                　void display(){
+                　	cout&lt;&lt;″num:″&lt;&lt;num&lt;&lt;endl;
+                　	cout&lt;&lt;″name:″&lt;&lt;name&lt;&lt;endl;
+                　	cout&lt;&lt;″sex:″&lt;&lt;sex&lt;&lt;endl;
+                　}
+                　private://后声明私有部分
+                　int num;
+                　char name[20];
+                　char sex;
+                　}stud1，stud2;//定义了两个Student类的对象
+            </pre>
+            <hr>
+            
+        </div>
+    </div>
+</div>
+ <!-- /.container -->
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+</body>
+</html>

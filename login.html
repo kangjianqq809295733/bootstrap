@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+  	<!--导航栏-->
+    <div class="row">
+    	<div class="col-md-12">
+        	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            	<div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand">青少年学习网</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">编程学习<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown"><a href="#front">前端</a></li>
+                                    <li><a href="#after">后端</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">英语阅读<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#cartoon">动画</a></li>
+                                	<li><a href="#movie">电影</a></li>
+                                	<li><a href="#reading">读物</a></li>
+                                	<li><a href="#game">游戏</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">多彩生活<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#activity-1">活动一</a></li>
+                                	<li><a href="#activity-2">活动二</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">好书推荐<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#children-book">儿童读物</a></li>
+                                	<li><a href="#teenager-book">青年读物</a></li>
+                            	</ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right"> 
+                			<li><a href="./register.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册</a></li> 
+                			<li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;登录</a></li> 
+                		</ul> 
+                    </div>      
+            	</div>
+			</nav>
+        </div>
+     </div>
+	<!--表单-->
+    <div class="row">
+    	<div class="col-md-12" style="margin-top:100px;">
+        	<h3 align="center">用户登录</h3>
+            <form id="tryitForm" class="form-horizontal" action="./index.html">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="text" class="form-control" name="username" />
+                </div>
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" class="form-control" name="password" />
+                </div>
+                <div class="form-group" align="center">
+                    <button type="submit" name="submit" class="btn btn-primary" onClick="rec()">登录</button>
+                </div>
+                <div class="form-group" align="center">
+                    <a href="./register.html">没有账户？点击注册</a>
+                </div>
+        	</form>
+        </div>
+    </div>
+     
+    
+    <!--版权信息-->
+    <div class="row">
+    	<div class="col-md-12">
+        <hr/>
+        <p align="center">
+        	&reg;版权所有
+        </p>
+        </div>
+    </div>
+    
+    
+  </div>
+    <!-- /.container -->
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script>
+		$(document).ready(function() {
+    $('#tryitForm').bootstrapValidator({
+		message: 'This value is not valid',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+        fields: {
+			username: {
+				message: '用户名验证失败',
+				validators: {
+					notEmpty: {
+						message: '用户名不能为空'
+					},
+					stringLength: {
+						min: 6,
+						max: 18,
+						message: '用户名长度必须在6到18位之间'
+					},
+					regexp: {
+						regexp: /^[a-zA-Z0-9_]+$/,
+						message: '用户名只能包含大写、小写、数字和下划线'
+					}
+				}
+			},
+			password: {
+				validators: {
+					notEmpty: {
+						message: '密码不能为空'
+					}
+				}
+			}
+		}
+    	});
+	});
+		
+	</script>
+    <script>
+	 function rec(){
+		 alert("登录成功");
+		 window.location.href="index.html";
+		 }
+	</script>
+    <script>
+		$(document).ready(function() {//导航栏定位
+            $(".dropdown-menu a").click(function(){
+				var href = $(this).attr("href");
+				$("a[href='"+href+"'][data-toggle='tab']").tab('show');
+			});
+        });
+	</script>
+    
+  </body>
+</html>
+

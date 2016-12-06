@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <div class="container">
+  	<!--导航栏-->
+    <div class="row">
+    	<div class="col-md-12">
+        	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            	<div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand">青少年学习网</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">编程学习<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown"><a href="#front">前端</a></li>
+                                    <li><a href="#after">后端</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">英语阅读<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#cartoon">动画</a></li>
+                                	<li><a href="#movie">电影</a></li>
+                                	<li><a href="#reading">读物</a></li>
+                                	<li><a href="#game">游戏</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">多彩生活<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#activity-1">活动一</a></li>
+                                	<li><a href="#activity-2">活动二</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">好书推荐<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#children-book">儿童读物</a></li>
+                                	<li><a href="#teenager-book">青年读物</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="lt.html">趣味编程社区</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right"> 
+                			<li><a href="./register.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册</a></li> 
+                			<li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;登录</a></li> 
+                		</ul> 
+                    </div>      
+            	</div>
+			</nav>
+        </div>
+     </div>
+     <!--轮播-->
+    <div class="row">
+    	<div class="row">
+    	<div class="col-md-12">
+        	<div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner" align="center">
+                    <div class="item active">
+                        <img src="img/习近平.jpg" alt="First slide">
+                        <div class="carousel-caption">习近平访美出席欢迎晚宴并发表演讲</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/马云.jpg" alt="Second slide">
+                        <div class="carousel-caption">阿里巴巴私有化_马云卖的什么药</div>
+                    </div>
+                    <div class="item">
+                        <img src="img/奥巴马.jpg" alt="Third slide">
+                        <div class="carousel-caption">奥巴马：不会就投下原子弹一事向日本道歉</div>
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              	</a>
+              	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                	<span class="glyphicon glyphicon-chevron-right"></span>
+                	<span class="sr-only">Next</span>
+              	</a>
+            </div> 
+        </div>
+     	</div>
+    </div>
+    <!--编程学习-->
+    <div class="row">
+    	<div class="col-md-12">
+        	<ul id="myTab" class="nav nav-tabs">
+            	<li>
+                    <a style="color:#600"><b>编程学习</b></a>
+                </li>    
+                <li class="active">
+                    <a href="#front" data-toggle="tab">前端</a>
+                </li>
+                <li>
+                	<a href="#after" data-toggle="tab">后端</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="front">
+        			<div class="col-md-4 column"><br/>
+                        <img src="img/front_html.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">HTML</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-danger" href="computer/front_html.html" target="_blank">了解更多 »</a></p>
+                    </div>
+                    <div class="col-md-4 column"><br/>
+                        <img src="img/front_css.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">CSS</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-warning" href="computer/front_css.html" target="_blank">了解更多 »</a></p>
+                    </div>
+                    <div class="col-md-4 column"><br/>
+                        <img src="img/front_js.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">JAVASCRIPT</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-info" href="computer/front_js.html" target="_blank">了解更多 »</a></p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="after">
+                    <div class="col-md-4 column"><br/>
+                        <img src="img/after_c++.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">C++</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-danger" href="computer/after_c++.html" target="_blank">了解更多 »</a></p>
+                    </div>
+                    <div class="col-md-4 column"><br/>
+                        <img src="img/after_java.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">JAVA</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-warning" href="computer/after_java.html" target="_blank">了解更多 »</a></p>
+                    </div>
+                    <div class="col-md-4 column"><br/>
+                        <img src="img/after_php.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">PHP</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-info" href="computer/after_php.html" target="_blank">了解更多 »</a>							</p>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+    <!--英语阅读-->
+    <div class="row">
+    	<div class="col-md-12">
+        	<ul id="myTab" class="nav nav-tabs">
+            	<li>
+                    <a style="color:#600"><b>英语阅读</b></a>
+                </li>
+                <li class="active">
+                    <a href="#cartoon" data-toggle="tab">动画</a>
+                </li>
+                <li>
+                	<a href="#movie" data-toggle="tab">电影</a>
+                </li>
+                <li>
+                    <a href="#reading" data-toggle="tab">读物</a>
+                </li>
+                <li>
+                	<a href="#game" data-toggle="tab">游戏</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="cartoon">
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/粉红色小猪.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">Peppa<br/>Pig</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-inverse" href="document/english/cartoon1.html" target="_blank">点击观看 »</a></p>
+                 	 </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/米奇妙妙屋.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">Mickey Mouse Clubhouse</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-success" href="document/english/cartoon2.html" target="_blank">点击观看 »</a></p>
+                     </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/海绵宝宝.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">SpongeBob SquarePants</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary" href="document/english/cartoon3.html" target="_blank">点击观看 »</a></p>
+                     </div>
+                </div>
+                <div class="tab-pane fade" id="movie">
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/星际迷航3.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">星际迷航3</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-inverse" href="document/english/movie1.html" target="_blank">点击观看 »</a></p>
+                 	 </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/伦敦沦陷.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">伦敦沦陷</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-success" href="document/english/movie2.html" target="_blank">点击观看 »</a></p>
+                     </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/僵尸世界大战.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">僵尸世界大战</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary" href="document/english/movie3.html" target="_blank">点击观看 »</a></p>
+                     </div>
+                </div>
+                <div class="tab-pane fade" id="reading">
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/第一套.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">我的第一套自然拼读故事书</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-inverse" href="document/book/bookinfo1.html"target="_blank">点击阅读 »</a></p>
+                 	 </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/开心的米丽丽.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">开心的米莉茉莉</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-success" href="document/book/bookinfo2.html" target="_blank">点击阅读 »</a></p>
+                 	 </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/壁花少年.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">壁花少年</h4>                        
+                        <p align="center"><a class="btn btn-hg btn-primary" href="document/book/bookinfo3.html" target="_blank">点击阅读 »</a></p>
+                 	 </div>
+                </div>
+                <div class="tab-pane fade" id="game">
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/捕鱼达人.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">捕鱼达人</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-inverse" href="game/捕鱼达人/index.html" target="_blank">点击游戏 »</a></p>
+                 	 </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/俄罗斯方块.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">俄罗斯方块</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary btn-success" href="game/俄罗斯方块/index.html" target="_blank">点击游戏 »</a></p>
+                 	 </div>
+                     <div class="col-md-4 column"><br/>
+                        <img src="img/贪吃蛇.jpg" class="img-responsive img-rounded" alt="Cinque Terre">
+                        <h4 align="center">贪吃蛇</h4>
+                        <p align="center"><a class="btn btn-hg btn-primary" href="game/贪吃蛇/index.html" target="_blank">点击游戏 »</a></p>
+                 	 </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+    <!--多彩生活-->
+    <div class="row">
+    	<div class="col-md-12">
+        	<ul id="myTab" class="nav nav-tabs">
+            	<li>
+                    <a style="color:#600"><b>多彩生活</b></a>
+                </li>    
+                <li class="active">
+                    <a href="#activity-1" data-toggle="tab">活动一</a>
+                </li>
+                <li>
+                	<a href="#activity-2" data-toggle="tab">活动二</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="activity-1">
+                    <div class="col-md-12 column" style="margin-top:30px;">
+                    	<div class="col-md-8 column">
+                        	<h4 align="left">国际领导力夏令营（自我领导篇）</h4>
+                        		最受欢迎的青少年领导力夏令营向上的成长气质、青春风范，从自我领导开始美国总统约翰肯尼迪盛赞“重塑了整个美国”D.S.A.P探索课自我领导到自我成就，从此开始卓越之路Bring out theBEST in you！领导力系列夏令营青少年领导力：为了“个人目标”达成，自我驱动并付出行动的成长气质，为了“团队目标”达成，发挥影响力，激励众人行动并共同成长的青春风范；领导力系列夏令营围绕学员领导力提高......
+                        	<p style="margin-top:10px;"><a class="btn btn-hg btn-primary palette-carrot" data-toggle="modal" data-target="#activity1">了解更多 »</a></p>
+                            <div class="modal fade" id="activity1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" id="addFormbox" style="width:80%">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            国际领导力夏令营（自我领导篇）
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                    	<p align="center"><img src="img/activity1.1.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                        <p align="center" style="color:#3498db;">最受欢迎的青少年领导力夏令营</p>
+										<p align="center" style="color:#3498db;">向上的成长气质、青春风范，从自我领导开始</p>
+										<p align="center" style="color:#3498db;">美国总统约翰肯尼迪盛赞“重塑了整个美国”D.S.A.P探索课</p>
+										<p align="center" style="color:#3498db;">自我领导到自我成就，从此开始卓越之路</p>
+										<p align="center" style="color:#3498db;">Bring out theBEST in you！</p>
+                                        <p><h6 style="color:#2980B9;">领导力系列夏令营</h6><br/>
+青少年领导力：为了“个人目标”达成，自我驱动并付出行动的成长气质，为了“团队目标”达成，发挥影响力，激励众人行动并共同成长的青春风范；领导力系列夏令营围绕学员领导力提高，分别设有两个夏令营，一个是“自我领导篇”，一个是“团队实践篇”，“自我领导篇”关注自我领导行动圈及自我领导能力，“团队实践篇”关注团队领导行动圈和团队领导能力提升及实践；两个篇章共同保证学员能够从优秀到卓越的成长之路！</p>
+                                        <p align="center"><img src="img/activity1.2.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                        <p>他们这样说：<br/>
+                                           在夏令营结束之后，我发生了巨大的变化，我发现自己在不断克服自己的不自信，忘记过去的一些不愉快。是的，经过这么多天的训练，我变得大胆了，找回了自信，也更加能够收放自己的情绪，面对挫折能够更好地去缓解，我知道了自己的核心优势，知道了自己最适合的地方，知道了自己的闪光点要去放大，而不是纠结在自己的不足上面，让我觉得很安心。感谢这次夏令营！<br/>
+                                                                                           <p align="right">----倪同学 2013年 8月夏令营</p>  
+                                        
+                                           夏令营的美国DSAP课程让我充分地了解和挖掘了自己的核心优势，其实当你去发现自己的长处时是感到很惊喜的，也受到了很多同学和教练的鼓励，你会感到快乐，仿佛重新认识了自己。这6天我过得很开心也很充实，学到了很多东西都是在学校学不到的，不管是可爱的舞蹈，还是让人打开自己的圈圈会议，说出了心里话，做了很多以前不敢去尝试的，踏出舒适圈，我更加自信了……感谢每一位教练的陪伴，感谢各位工作人员的付出，因为有你们才有了这些天美好的这段旅程，希望我们有机会能再见！<br/>
+                                                                                            <p align="right">----季同学 2013年8月夏令营</p> 
+                                        
+                                        看着女儿的变化，我欣慰的同时，内心翻腾着振奋，因为感受到了孩子深藏着无穷的潜能，同时也迫切意识到，如何管理与成长自己，与孩子共同成长的重要性，感谢你们用爱和专业的力量对孩子进行内心和自我优势的引导、挖掘，从触动心灵的内膜，让孩子从精神层面上迈出了舒适圈的那至关重要的一步，我庆幸，我的女儿能够接收到你们爱与力量的教育！<br/>
+                                                                                            <p align="right">----沈妈妈 2013年8月夏令营学生家长</p>
+                                        
+                                        <h6 style="color:#2980B9;">自我领导篇课程目标：</h6><br/>
+                                        Ø  深度探索核心优势，通过国际知名DSAP探索体系，撰写属于自己的核心竞争力报告<br/>
+                                        Ø  探索能够驱动自己的追重要的目标和价值，做出重要选择，并设定一个可执行的目标<br/>
+                                        Ø  培养以身作则的行为习惯，能够坚持自己的信念、为他人做出榜样<br/>
+                                        Ø  培养自我领导的理念及习惯， 为自己负责，坚持不懈地自我驱动并行动，以完成目标<br/>
+                                        Ø  能够面对困难，有勇气挑战现状，发现更多可能性，运用资源并发动改变<br/>
+                                        <h6 style="color:#2980B9;">课程模块：</h6><br/>
+                                        自我领导力之三大能力<br/>
+                                            挑战现状：有勇气挑战现状，改变的力量，让不可能变可能。<br/>
+                                            独立思考：跳出思维陷阱和思维定式，发现潜在危机与新的可能性<br/>
+                                            自我负责：为行动、情绪、结果负责，成为驾驭自己生命的人；<br/>
+                                        <h6 style="color:#2980B9;">自我领导行动圈</h6><br/>
+                                        Ø  自我驱动：<br/>
+                                            探索核心优势，发现每个人独特的优势模式，撰写核心报告；<br/>
+                                            倾听自己的声音，发现内在信念和价值观。<br/>
+                                        Ø  个人高效行动：<br/>
+                                             高效行动三大法宝，迅速提升行动力<br/>
+                                             清理负面能量，转化为正向能量；<br/>
+                                        Ø  设定个人目标：探索目标和方向—我究竟要去哪里 <br/>
+                                        <h6 style="color:#2980B9;">核心模块DSAP：</h6><br/>
+                                        <p align="center"><img src="img/activity1.3.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                        “D.S.A.P核心竞争力课程”源自美国，帮助人发现自己的内在天赋潜力，学会运用自己特有核心优势模式,提升个人核心竞争力价值的课程。由复启教育和核心竞争力（中国）中心（CCDS）合作研发，是中国唯一得到美国核心竞争力中心（CDS）认可和合作的青少年课程。<br/>
+                                        <p align="center"><img src="img/activity1.4.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                        <h6 style="color:#2980B9;">营队日程：</h6><br/>
+                                        <p align="center"><img src="img/activity1.5.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                        主办单位：子诲教育&nbsp;&nbsp;&nbsp;&nbsp;清华青少年学习服务网<br/>
+                                        活动时间：2014年7月21日-7月26日&nbsp;&nbsp;&nbsp;&nbsp;8月6日-8月11日<br/>
+                                        招生对象：13-18岁希望自我成长、提升领导力，积累更多实践经验，特别推荐准备出国或参加国内高校自主招生的同学。<br/>
+                                        活动费用：人生投资金额5980RMB<br/>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <div align="center"><button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                        </button></div>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal -->
+                    	</div>
+                        </div>
+                        <div class="col-md-4 column">
+                        	<img src="img/activity1.1.jpg" class="img-responsive img-rounded" alt="Cinque Terre" style="float:right">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="activity-2">
+                    <div class="col-md-12 column" style="margin-top:30px;">
+                    	<div class="col-md-8 column">
+                        	<h4 align="left">国际领导力夏令营（团队实战篇）</h4>
+                        		源于美国，世界最有影响力的青少年领导力课程一次让你倾情投入、发掘领袖潜能，可以改变生涯的奇幻旅程！一次在出国留学、自主招生申请中可圈可点的宝贵实践经验！与学校学习绝不相同，被所有学员盛赞“不能错过的灵魂派对”的欢乐营队！6天，点燃你的领导力，成长、实践、凝聚与超越，让你从此卓越一生！Bring out the Leadership in you！国际领导力团队（实战篇）青少年领导力：为了“个人目标......
+                        	<p style="margin-top:10px;"><a class="btn btn-hg btn-primary palette-carrot" data-toggle="modal" data-target="#activity2">了解更多 »</a></p>
+                            <div class="modal fade" id="activity2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" style="width:80%">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                            &times;
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">
+                                            国际领导力夏令营（团队实战篇）
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p align="center"><img src="img/activity2.1.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                        <p align="center" style="color:#3498db;">源于美国，世界最有影响力的青少年领导力课程</p>
+                                        <p align="center" style="color:#3498db;">一次让你倾情投入、发掘领袖潜能，可以改变生涯的奇幻旅程！</p>    
+                                        <p align="center" style="color:#3498db;">一次在出国留学、自主招生申请中可圈可点的宝贵实践经验！</p>
+                                        <p align="center" style="color:#3498db;">与学校学习绝不相同，被所有学员盛赞“不能错过的灵魂派对”的欢乐营队！</p>
+                                        <p align="center" style="color:#3498db;">6天，点燃你的领导力，成长、实践、凝聚与超越，让你从此卓越一生！</p>
+                                        <p align="center" style="color:#3498db;">Bring out the Leadership in you！</p>
+                                        <h6 style="color:#2980B9;">国际领导力团队（实战篇）</h6><br/>
+                                        青少年领导力：为了“个人目标”达成，自我驱动并付出行动的成长气质，为了“团队目标”达成，发挥影响力，激励众人行动并共同成长的青春风范；领导力系列夏令营围绕学员领导力提高，分别设有两个夏令营，一个是“自我领导篇”，一个是“团队实践篇”，“自我领导篇”关注自我领导行动圈及自我领导能力，“团队实践篇”关注团队领导行动圈和团队领导能力提升及实践；两个篇章共同保证学员能够从优秀到卓越的成长之路！
+                                           <p align="center"><img src="img/activity2.2.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                            他们这样说：<br/>
+                                        
+                                            其实我一开始要来的时候是忐忑的，因为不知道这到底是一个怎么样的活动。于是出来的时候带了两份报纸两本《新发现》，防止无聊，没想到我一点看的机会都没有。满满地收获给我带来的是内在的成长，满满的感动和力量，虽然我处在高二升高三的阶段，但是这几天绝对值得！  <br/>
+                                        
+                                       <p align="right"> ----施同学 2010年 领导力夏令营</p>  
+                                        
+                                            作为老师，孩子在我们的眼中平时好像胆怯、不自信、有时还会跟家长顶嘴、学习不够主动等等。但是通过这次短短的几天活动，我觉得孩子长大了，孩子进步了，我感谢这里的老师。通过今天孩子们的表现我们看到了老师以及家长以往对孩子们教育理念的不足，他们其实很优秀、让我们看到了什么是青春、什么是勇气、什么是梦想，真的让我们很感动！<br/>
+                                        <p align="right">----施妈妈 2012年夏令营学员家长 中学校长</p>
+                                        <h6 style="color:#2980B9;">课程目标：</h6><br/>
+                                        5个大型室内团队探险与模拟项目，学习从自我领导到团队领导，实现领导力的完美提升；<br/>
+                                        培养团队意识，通过团队实践、游戏、及戏剧表演等分工合作，促进由“个人英雄”到“团队冠军”的转变，通过凝聚团队实现共赢达到目标；<br/>       
+                                        改善人际关系，移除沟通障碍，学习尊重彼此、表里一致的高效沟通，打造自己的关系和人脉；<br/>
+                                        提升问题解决能力，和团队一起面临问题与挑战，并想尽所有办法去解决这个问题，促进行动力的突破；<br/>
+                                        商业思维和理财意识，仿真商业环境与价值创造过程，实践商业角色；<br/>
+                                        思维提升，独立思考能力和创新思维，跳出思维框框，摆脱标准答案；<br/>
+                                        <h6 style="color:#2980B9;">课程模块：</h6><br/>
+                                        团队领导力之三大能力<br/>
+                                        开创精神与使命感：面对困难和挑战，为自己和团队负责，塑造责任感，绘制蓝图，并将蓝图变成现实；<br/>
+                                        自信与信任：相信自己并信任他人，用自己的信念和热情影响和激励别人，提升团队凝聚力；<br/>
+                                        沟通与激励：学会人际关系4模式，破除人际坚冰，换位思考，探索合作双赢，激励他人不懈前行；<br/>
+                                        团队领导行动圈<br/>
+                                        影响他人：从小事做起，从自己做起，以身作则，鼓励并认可他人，并为他人树立榜样；<br/>
+                                        使众人行：发挥团队优势，形成优势组合；欣赏自己同时欣赏别人，达到团队合作与共赢；<br/>
+                                        团队目标感：设定团队目标，诉诸共同愿景，感召他人为共同愿景奋斗；<br/>
+                                        <h6 style="color:#2980B9;">团队实践</h6><br/>
+                                        古堡探险：室内模拟探险游戏，一起探险一起挑战，一起感受信任带来的温度；<br/>
+                                        新闻发布会：来自UCLA的的课程，体验不同视野和角色下的博弈，发出自己的声音；<br/>
+                                        商业模拟挑战赛：模拟巧克力产业的相关企业的运营，体验规划、运营、合作、谈判过程；<br/>
+                                        伟大航路：室内模拟寻宝，危机四伏看你规划和运用资源，和小伙伴一起安全返航；<br/>
+                                        mini创业：用初始资金和有限时间，找寻商业机会，进行创业实践；<br/>
+                                        实践中，提升团队目标感、行动力和团队凝聚力，在诸多的挑战项目中，体验行动的成就感。<br/> 
+                                        <h6 style="color:#2980B9;">行程安排：</h6><br/>
+                                        <p align="center"><img src="img/activity2.3.jpg" class="img-responsive img-rounded" alt="Cinque Terre"></p>
+                                        主办单位：子诲教育&nbsp;&nbsp;&nbsp;&nbsp;清华青少年学习服务网<br/>
+                                        活动时间：2014年7月28日-8月2日&nbsp;&nbsp;&nbsp;&nbsp;8月12日-8月17日<br/>​
+                                        招生对象：13-18岁希望自我成长、提升领导力，积累更多实践经验，特别推荐准备出国或参加国内高校自主招生的同学。<br/>
+                                    </div>
+                                    <div class="modal-footer">
+                                       <div align="center"><button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                        </button></div>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal -->
+                    	</div>
+                        </div>
+                        <div class="col-md-4 column">
+                        	<img src="img/activity2.1.jpg" class="img-responsive img-rounded" alt="Cinque Terre" style="float:right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+    <!--好书推荐-->
+    <div class="row">
+    	<div class="col-md-12">
+        	<ul id="myTab" class="nav nav-tabs" >
+            	<li>
+                    <a style="color:#600"><b>好书推荐</b></a>
+                </li>    
+                <li class="active">
+                    <a href="#children-book" data-toggle="tab">儿童读物</a>
+                </li>
+                <li>
+                	<a href="#teenager-book" data-toggle="tab">青年读物</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="children-book">
+                    <div class="col-md-6 column"><br/>
+                        <ul class="list-group">
+                            <li class="list-group-item active">新书推荐</li>
+                            <li class="list-group-item">
+                                <span class="badge">新</span>
+                                <a href="document/children/多多老板和森林婆婆.html" target="_blank">多多老板和森林婆婆</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">新</span>
+                                <a href="document/children/彼得兔的故事.html" target="_blank">彼得兔的故事</a>
+                            </li>
+                            <li class="list-group-item"><a href="document/children/阿黛拉和西蒙在巴黎.html" target="_blank">阿黛拉和西蒙在巴黎</a></li>
+                            <li class="list-group-item"><a href="document/children/阿秋和阿狐.html" target="_blank">阿秋和阿狐</a></li>
+                            
+                            <li class="list-group-item"><a href="document/children/花婆婆.html" target="_blank">花婆婆</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 column"><br/>
+                        <ul class="list-group">
+                        	<li class="list-group-item active">热销图书</li>
+                        	<li class="list-group-item">
+                                <span class="badge">新</span>
+                                 <a href="document/children/小恩的秘密花园.html" target="_blank">小恩的秘密花园</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">新</span>
+                                 <a href="document/children/我爸爸.html" target="_blank">我爸爸</a>
+                            </li>
+                            
+                            <li class="list-group-item"> <a href="document/children/妈妈买绿豆.html" target="_blank">妈妈买绿豆</a></li>
+                            <li class="list-group-item"> <a href="document/children/石头汤.html" target="_blank">石头汤</a></li>
+                            
+                            <li class="list-group-item"> <a href="document/children/我的爸爸叫焦尼.html" target="_blank">我的爸爸叫焦尼</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="teenager-book">
+                	<div class="col-md-6 column"><br/>
+                        <ul class="list-group">
+                            <li class="list-group-item active">新书推荐</li>
+                            <li class="list-group-item">
+                                <span class="badge">新</span>
+                                <a href="document/teenager/半生为人.html" target="_blank">半生为人</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">新</span>
+                                <a href="document/teenager/聪明人的笨功夫.html" target="_blank">聪明人的笨功夫</a>
+                            </li>
+                            <li class="list-group-item"><a href="document/teenager/不抱怨的世界.html" target="_blank">不抱怨的世界</a></li>
+                            <li class="list-group-item"><a href="document/teenager/成长比成功更重要.html" target="_blank">成长比成功更重要</a></li>
+                            <li class="list-group-item"><a href="document/teenager/哈佛凌晨四点半.html" target="_blank">哈佛凌晨四点半</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 column"><br/>
+                        <ul class="list-group">
+                        	<li class="list-group-item active">热销图书</li>
+                        	<li class="list-group-item">
+                                <span class="badge">新</span>
+                                <a href="document/teenager/做人就要狠一点.html" target="_blank">做人就要狠一点</a>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">新</span>
+                                <a href="document/teenager/学会独立思考.html" target="_blank">学会独立思考</a>
+                            </li>
+                            <li class="list-group-item"><a href="document/teenager/你的孤独虽败犹荣.html" target="_blank">你的孤独虽败犹荣</a></li>
+                            <li class="list-group-item"><a href="document/teenager/年轻可以一无所有.html" target="_blank">年轻可以一无所有</a></li>
+                            <li class="list-group-item"><a href="document/teenager/在痛苦的世界中尽力而为.html" target="_blank">在痛苦的世界中尽力而为</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+    <!--版权信息-->
+    <div class="row">
+    	<div class="col-md-12">
+        <hr/>
+        <p align="center">
+        	&reg;版权所有
+        </p>
+        </div>
+    </div>
+    
+    
+  </div>
+    <!-- /.container -->
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+	<script>
+		$(document).ready(function() {//导航栏定位
+            $(".dropdown-menu a").click(function(){
+				var href = $(this).attr("href");
+				$("a[href='"+href+"'][data-toggle='tab']").tab('show');
+			});
+        });
+	</script>
+  </body>
+</html>

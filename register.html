@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrapValidator.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico">
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+  <div class="container">
+  	<!--导航栏-->
+    <div class="row">
+    	<div class="col-md-12">
+        	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            	<div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                            <span class="sr-only">切换导航</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand">青少年学习网</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">编程学习<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown"><a href="#front">前端</a></li>
+                                    <li><a href="#after">后端</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">英语阅读<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#cartoon">动画</a></li>
+                                	<li><a href="#movie">电影</a></li>
+                                	<li><a href="#reading">读物</a></li>
+                                	<li><a href="#game">游戏</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">多彩生活<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#activity-1">活动一</a></li>
+                                	<li><a href="#activity-2">活动二</a></li>
+                            	</ul>
+                            </li>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">好书推荐<b class="caret"></b>
+                            	</a>
+                                <ul class="dropdown-menu">
+                                	<li class="dropdown"><a href="#children-book">儿童读物</a></li>
+                                	<li><a href="#teenager-book">青年读物</a></li>
+                            	</ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right"> 
+                			<li><a href="./register.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册</a></li> 
+                			<li><a href="./login.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;登录</a></li> 
+                		</ul> 
+                    </div>      
+            	</div>
+			</nav>
+        </div>
+     </div>
+	<!--表单-->
+    <div class="row">
+    	<div class="col-md-12" style="margin-top:100px;">
+        	<h3 align="center">用户注册</h3>
+           <form id="tryitForm" class="form-horizontal" name="reform">
+                <div class="form-group">
+                    <label>用户名</label>
+                    <input type="text" class="form-control" onBlur="rec1()" id="username" name="username" />
+                    <div id="d2" style="display:none"><p id="text"></p></div>
+                </div>
+                
+                <div class="form-group">
+                    <label>密码</label>
+                    <input type="password" class="form-control" id="password1" name="password1" />
+                </div>
+                <div class="form-group">
+                    <label>确认密码</label>
+                    <input type="password" class="form-control" onBlur="rec2()" id="password2" name="password2" />
+                    <div id="d3" style="display:none"><p id="test1"></p></div>
+                </div>
+                <div class="form-group">
+                    <label>邮箱</label>
+                    <input type="text" class="form-control" onBlur="rec3()" id="email" name="email" />
+                    <div id="d4" style="display:none"><p id="test2"></p></div>
+                </div>
+                <div class="form-group">
+                    <label>性别</label>
+                    <input type="radio" name="sex" value="male">男
+					<input type="radio" name="sex" value="female">女
+                </div>
+                <div class="form-group">
+                    <label>省份</label>
+                    <select name="cars">
+                        <option value="北京">北京市</option>
+                         <option value="浙江省">浙江省</option>
+                        <option value="天津市">天津市</option>
+                         <option value="安徽省">安徽省</option>
+                        <option value="上海市">上海市</option>
+                          <option value="福建省">福建省</option>
+                          <option value="重庆市">重庆市</option>
+                           <option value="江西省">江西省</option>
+                          <option value="山东省">山东省</option>
+                          <option value="河南省">河南省</option>
+                         <option value="湖北省">湖北省</option>
+                          <option value="湖南省">湖南省</option>
+                          <option value="广东省">广东省</option>
+                         <option value="海南省">海南省</option>
+                          <option value="山西省">山西省</option>
+                          <option value="青海省">青海省</option>
+                          <option value="江苏省">江苏省</option>
+                          <option value="辽宁省">辽宁省</option>
+                          <option value="吉林省">吉林省</option>
+                          <option value="台湾省">台湾省</option>
+                          <option value="河北省">河北省</option>
+                           <option value="贵州省">贵州省</option>
+                          <option value="四川省">四川省</option>
+                          <option value="云南省">云南省</option>
+                          <option value="陕西省">陕西省</option>
+                          <option value="甘肃省">甘肃省</option>
+                          <option value="黑龙江省">黑龙江省</option>
+                          <option value="香港特别行政区">香港特别行政区</option>
+                          <option value="澳门特别行政区">澳门特别行政区</option>
+                          <option value="广西壮族自治区">广西壮族自治区</option>
+                          <option value="宁夏回族自治区">宁夏回族自治区</option>
+                          <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                          <option value="内蒙古自治区">内蒙古自治区</option>
+                          <option value="西藏自治区">西藏自治区</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>爱好</label>
+                    <input type="checkbox" name="vehicle" value="Bike">看书
+					<input type="checkbox" name="vehicle" value="Car">编程 
+                </div>
+                <div class="form-group">
+                    <label>头像</label>
+                    <input id="File1" runat="server" name="UpLoadFile" type="file" /> 
+                </div>
+                <div class="form-group" align="center">
+                    <button type="button" name="submit" class="btn btn-primary" onClick="rec4()">注册</button>
+                </div>
+        	</form>
+        </div>
+    </div>
+     
+    
+    <!--版权信息-->
+    <div class="row">
+    	<div class="col-md-12">
+        <hr/>
+        <p align="center">
+        	&reg;版权所有
+        </p>
+        </div>
+    </div>
+    
+    
+  </div>
+    <!-- /.container -->
+    <!-- jQuery (necessary for Flat UI's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/vendor/video.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script>
+		
+	</script>
+    <script>
+		$(document).ready(function() {//导航栏定位
+            $(".dropdown-menu a").click(function(){
+				var href = $(this).attr("href");
+				$("a[href='"+href+"'][data-toggle='tab']").tab('show');
+			});
+        });
+	//校验登录名：只能输入6-20个以字母开头、可带数字的字串
+	function isTrueName(s)   
+{   
+var patrn=/^[a-zA-Z]{1}[a-zA-Z0-9]{5,19}$/;   
+if (!patrn.exec(s)) return false ;
+return true ;
+}   
+function isEmail(str) {
+    if (str.charAt(0) == "." || str.charAt(0) == "@" || str.indexOf('@', 0) == -1 ||
+        str.indexOf('.', 0) == -1 || str.lastIndexOf("@") == str.length - 1 ||
+        str.lastIndexOf(".") == str.length - 1 ||
+        str.indexOf('@.') > -1)
+        return false;
+    else
+        return true;
+}
+
+	
+	function rec1(){
+		var user=document.getElementById("username").value;
+		var div1=document.getElementById("text");
+	    var div2=document.getElementById("d2");
+		if(!isTrueName(user))
+		{
+		div2.style.display="block";	
+		document.getElementById("text").innerHTML="<font color='red' size='3'>用户名书写错误，需6-20个以字母开头、可带数字的字串</font>";
+		
+		}
+		else {
+	     div2.style.display="none";
+		}
+    }	
+	function rec2(){
+	    var p1=document.getElementById("password1").value;   	
+		var p2=document.getElementById("password2").value;
+		var div3=document.getElementById("d3");
+		if(p1!=p2){
+		div3.style.display="block";
+		 document.getElementById("test1").innerHTML="<font color='red' size='3'>两次密码输入不一样</font>";
+		}
+		else{
+		div3.style.display="none";	
+		}
+	}
+	function rec3(){
+	    var em=document.getElementById("email").value;   	
+		var div4=document.getElementById("d4");
+		if(!isEmail(em)){
+		div4.style.display="block";
+		 document.getElementById("test2").innerHTML="<font color='red' size='3'>邮箱格式错误，请重新书写</font>";
+		}
+		else{
+		div4.style.display="none";	
+		}
+	}
+      function rec4(){
+		   
+		alert("注册成功！请登录");
+		window.location.href="login.html";
+	  }
+		
+		 
+		
+
+
+ </script>   
+  </body>
+</html>
+
